@@ -1,0 +1,54 @@
+body {
+    font-size: 120%; /* font-size 1em = 10px on default browser settings */
+    }
+    
+    p {
+        padding-top: 40px;
+        margin: 0;
+        font-size: 100px;
+        font-family: sans-serif;
+        text-align: center;
+        vertical-align: middle;
+      }
+    .nav_bar {
+       display: flex;
+        flex-direction: row;
+      
+    }
+    
+    .inner-div {
+        height: 200px;
+        width: 400px;
+        margin: 10px;
+        background-color: #096eeb;
+        display: flex;
+        flex-direction: row;
+      }
+    
+    
+    .content-box {
+      box-sizing: content-box;
+      padding: 20px;
+      border: 10px green solid;
+      margin: 30px blue;
+      /* Total width: 160px + (2 * 20px) + (2 * 8px) = 216px
+         Total height: 80px + (2 * 20px) + (2 * 8px) = 136px
+         Content box width: 160px
+         Content box height: 80px */
+    }
+    
+    .border-box {
+      box-sizing: border-box;
+      padding: 20px;
+      border: 10px blue solid;
+      margin: 30px;
+      float: right;
+      /* Total width: 160px
+         Total height: 80px
+         Content box width: 160px - (2 * 20px) - (2 * 8px) = 104px
+         Content box height: 80px - (2 * 20px) - (2 * 8px) = 24px */
+    }
+    
+    button:hover {
+      transform:rotate(180deg);
+    }
